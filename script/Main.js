@@ -1,7 +1,33 @@
-let swiper = new Swiper(".mySwiper",{
+let swiper;
+
+function initSwiper() {
+  // Define the default configuration
+  const defaultConfig = {
     slidesPerView: 6,
     spaceBetween: 8,
-})
+  };
+
+  // Check the viewport width and update the configuration
+  if (window.matchMedia('(max-width: 550px)').matches) {
+    swiper = new Swiper(".mySwiper", {
+      ...defaultConfig,
+      slidesPerView: 5, // Change slidesPerView to 4 for screens with a max width of 550px
+    });
+  } else {
+    swiper = new Swiper(".mySwiper", defaultConfig);
+  }
+}
+
+// Initialize the Swiper
+initSwiper();
+
+// Listen for the resize event and update the Swiper configuration
+window.addEventListener('resize', () => {
+  if (swiper) {
+    swiper.destroy(); // Destroy the existing Swiper instance
+  }
+  initSwiper(); // Reinitialize Swiper with the updated configuration
+});
 
 /*****************window scroll*********************/
 window.addEventListener('scroll',()=>{

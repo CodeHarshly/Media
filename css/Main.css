@@ -842,7 +842,7 @@ aside .menu-item:nth-last-child(2){
     }
     @media (max-width:551px) {
         .middle-container{
-            max-width: 400px !important;
+            max-width: 350px !important;
         }
     }
 }
