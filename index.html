@@ -21,7 +21,7 @@
                 <input type="search" placeholder="Search">
             </div>
             <div class="add-post">
-                <label for="add-post" class="btn btn-primary mini-button">Add Post</label>
+                <label for="add-post" class="btn btn-primary mini-button" id="hidebtn">Add Post</label>
                 <div class="profile-picture1" id="my-profile">
                     <img src="images/Captainamerica1.jpg" alt="Profile">
                 </div>
@@ -48,17 +48,17 @@
                 </a>
                 <!-----------------aside bar--------------------->
                 <aside>
-                    <a href="" class="menu-item active">
+                    <a class="menu-item active">
                         <span><i class="fa-solid fa-house"></i></span> <h3>Home</h3>
                     </a>
 
-                    <a href="" class="menu-item">
+                    <a class="menu-item">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span> <h3>Explore</h3>
                     </a>
 
-                    <a href="" class="menu-item">
+                    <a class="menu-item" id="notify-box">
                         <span><i class="fa-solid fa-bell"></i></span> 
-                        <small class="notify-counter">5</small>
+                        <small class="notify-counter" id="ntCounter1">5</small>
                         <h3>Notifications</h3>
                         
                         <!-----------------notification box--------------------->
@@ -113,21 +113,21 @@
                         
                     </a>
 
-                    <a href="" class="menu-item">
+                    <a class="menu-item" id="msgmenu">
                         <span><i class="fa-solid fa-message"></i></span> 
-                        <small class="notify-counter">3</small>
+                        <small class="notify-counter" id="ntCounter2">3</small>
                         <h3>Message</h3>
                     </a>
 
-                    <a href="" class="menu-item">
+                    <a class="menu-item">
                         <span><i class="fa-solid fa-bookmark"></i></span> <h3>Book Marks</h3>
                     </a>
 
-                    <a href="" class="menu-item ">
+                    <a class="menu-item " id="theme">
                         <span><i class="fa-solid fa-moon"></i></span> <h3>Theme</h3>
                     </a>
 
-                    <a href="" class="menu-item ">
+                    <a class="menu-item ">
                         <span><i class="fa-solid fa-gear"></i></span> <h3>Setting</h3>
                     </a>
 
@@ -513,10 +513,10 @@
                             </div>
                         </div>
                         <div class="action">
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" id="accept">
                                 Accept
                             </div>
-                            <div class="btn btn-danger">
+                            <div class="btn btn-danger" id="delete">
                                 Delete
                             </div>
                         </div>
@@ -536,10 +536,10 @@
                             </div>
                         </div>
                         <div class="action">
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" id="accept">
                                 Accept
                             </div>
-                            <div class="btn btn-danger">
+                            <div class="btn btn-danger" id="delete">
                                 Delete
                             </div>
                         </div>
@@ -559,60 +559,15 @@
                             </div>
                         </div>
                         <div class="action">
-                            <div class="btn btn-primary">
+                            <div class="btn btn-primary" id="accept">
                                 Accept
                             </div>
-                            <div class="btn btn-danger">
+                            <div class="btn btn-danger" id="delete">
                                 Delete
                             </div>
                         </div>
                     </div>
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture1">
-                                <img src="images/Bruce1.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Bruce Banner</h5>
-                                <p class="text-gry">
-                                    10 mutual friend
-                                </p>
-                                <small class="text-gry alert">You have accepted friend request</small>
-                                
-                            </div>
-                        </div>
-                        <div class="action">
-                            <div class="btn btn-primary">
-                                Accept
-                            </div>
-                            <div class="btn btn-danger">
-                                Delete
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-picture1">
-                                <img src="images/Bruce1.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Bruce Banner</h5>
-                                <p class="text-gry">
-                                    10 mutual friend
-                                </p>
-                                <small class="text-gry alert">You have accepted friend request</small>
-                                
-                            </div>
-                        </div>
-                        <div class="action">
-                            <div class="btn btn-primary">
-                                Accept
-                            </div>
-                            <div class="btn btn-danger">
-                                Delete
-                            </div>
-                        </div>
-                    </div>
+                    
                  </div>
             </div>
 
@@ -675,8 +630,8 @@
                         </div>
                         <div class="choose-size">
                             <span class="font-size1"></span>
-                            <span class="font-size2 active"></span>
-                            <span class="font-size3"></span>
+                            <span class="font-size2"></span>
+                            <span class="font-size3 active"></span>
                             <span class="font-size4"></span>
                             <span class="font-size5"></span>
                         </div>

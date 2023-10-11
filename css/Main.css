@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid;
+    outline: none;
     text-decoration: none;
     list-style: none;
     border: none;
 }
 :root {
-    --color-white: hsl(252, 30%, 100%);
-    --color-light: hsl(252, 30%, 90%);
+    --user-primary-color: 252;
+    --darker-color-theme: 17%;
+    --lighter-color-theme: 92%;
+    --White-color-theme: 100%;
+    --color-white: hsl(252, 30%, var(--White-color-theme));
+    --color-light: hsl(252, 30%, var(--lighter-color-theme));
     --color-gray: hsl(252, 15%, 60%);
-    --color-primary: hsl(252, 75%, 60%);
+    --color-primary: hsl(var(--user-primary-color), 75%, 60%);
     --color-secondary: hsl(252, 100%, 90%);
     --color-success: hsl(120, 95%, 60%);
     --color-danger: hsl(0, 95%, 60%);
-    --color-dark: hsl(252, 30%, 15%);
+    --color-dark: hsl(252, 30%, var(--darker-color-theme));
     --color-black: hsl(252, 30%, 8%);
 
     --border-radius: 2rem;
@@ -636,6 +640,7 @@ aside .menu-item:nth-last-child(2){
     margin-left: .5rem;
     margin-top: -.5rem
 }
+
 /*************add post popup****************/
 /*.add-post-popup {
     display: flex;
@@ -798,7 +803,11 @@ aside .menu-item:nth-last-child(2){
     color: var(--color-danger);
     transform: scale(1.05);
 }
-
+.icon-bg{
+    background: var(--color-white);
+    padding: .2rem;
+    border-radius: .2rem;
+}
 /*************media querry****************/
 @media (max-width: 1200px){
     .container{
@@ -811,8 +820,8 @@ aside .menu-item:nth-last-child(2){
         width: 4rem;
         z-index: 5;
         position: fixed;
-        left: 0;
-        top: 20%;
+        right: 0;
+        top: 28%;
     }
     .main-container .main-left .profile{
         display: none;
@@ -826,7 +835,7 @@ aside .menu-item:nth-last-child(2){
     aside .btn{
         display: none;
     }
-    @media (max-width:991px) {
+    @media (max-width:1020px) {
         nav .search-bar{
             display: none;
         }
@@ -839,10 +848,26 @@ aside .menu-item:nth-last-child(2){
         .main-right{
             display: none;
         }
+        .main-left{
+            right: 0;
+        }
     }
     @media (max-width:551px) {
         .middle-container{
             max-width: 350px !important;
         }
+        .stories-wrapper {
+            height: 10rem !important;
+        }
+        #hidebtn{
+            display: none;
+        }
+        
     }
+    
 }
+/*@media (max-width:551px) {
+    .main-left{
+        bottom: 0;
+    }
+}*/
