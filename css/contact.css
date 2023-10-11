@@ -1,0 +1,132 @@
+/********************** Contact **********************/
+
+.contact{
+   background-color: var(--banner-bg3);
+}
+
+.contact h1 span{
+   color:var(--special-color);
+}
+
+.contact h1{
+   font-size: 4rem;
+   margin-bottom: 3rem;
+   filter: drop-shadow(5px 5px 5px var(--font-shadow));
+}
+
+.contact form{
+   max-width: 70rem;
+   margin: 1rem auto;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.contact form .input-box1,
+.contact form .input-box2{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+}
+.contact form .input-box1 input,
+.contact form .input-box2 input,
+.contact form textarea{
+   width:100%;
+   padding: 1.5rem;
+   font-size: 1.6rem;
+   color: var(--text-color);
+   background-color: var(--banner-bg2);
+   filter: drop-shadow(5px 5px 5px var(--font-shadow));
+   border-radius: .8rem;
+   margin: .7rem 0;
+}
+
+.contact form .input-box1 input {
+   width: 49%;
+}
+
+.contact form textarea{
+   resize: none;
+}
+
+/********************** Submit Button **********************/
+
+.btn {
+   display: inline-block;
+   background:var(--banner-bg3);
+   padding: .8rem 2rem;
+   border-radius: 4rem;
+   font-size: 1.8rem;
+   border: .2rem solid var(--special-color);
+   color: var(--special-color);
+   letter-spacing: .1rem;
+   position: relative;
+   margin: 1.5rem 1.5rem 1.5rem 0;
+   font-weight: 600;
+   z-index: 1;
+   box-shadow: 3px 3px 8px var(--font-shadow) ;
+ }
+
+.contact form .btn{
+   margin-top: 2rem;
+   cursor: pointer;
+}
+
+.btn:hover {
+   transition: .5s ease;
+   color:var(--banner-bg3);
+   background-color: var(--special-color);
+   box-shadow: 0 0 1rem var(--special-color);
+ }
+ 
+/********************** Footer **********************/
+
+ .footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 2rem 9%;
+   background-color: var(--banner-bg2);
+
+ }
+
+ .footer-content p{
+   font-size: 1.6rem;
+   color: var(--text-color);
+   filter: drop-shadow(5px 5px 5px var(--font-shadow));
+ }
+
+ .scroll-Up a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: .8rem;
+   filter: drop-shadow(5px 5px 5px var(--font-shadow));
+   background-color: var(--special-color);
+   border-radius: 1rem;
+
+ }
+
+ .scroll-Up a i{
+   font-size: 2.5rem;
+   color:var(--banner-bg2)
+ }
+ 
+/********************** Mobile View **********************/
+
+ @media (max-width:768px){
+   .contact form{
+      max-width: 47rem; 
+   }
+}
+
+@media (max-width: 450px){
+   html {
+     font-size: 50%;
+   }
+   .contact form .input-box1 input {
+      width: 100%;
+   }
+}
+ 

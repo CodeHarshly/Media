@@ -1,0 +1,141 @@
+/********************** About **********************/
+
+.about{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--banner-bg2);
+}
+
+.about-content{
+  margin: auto 6em;
+  line-height:1.5;
+  color: var(--text-color);
+}
+
+.about-content span{
+  color:var(--special-color);
+}
+
+.about-head{
+  font-size: 4rem;
+  filter: drop-shadow(5px 5px 5px var(--font-shadow));
+}
+
+.about-content p{
+  display: block;
+  font-size: 1.8rem;
+  filter: drop-shadow(5px 5px 5px var(--font-shadow));
+  line-height: 1.5;
+}
+
+.custom-image1 {
+  display: inline-block;
+  position: relative;
+  left: 30px;
+  top: 0;
+  width: 40vw;
+  filter: drop-shadow(5px 5px 5px var(--font-shadow));
+  transition: .3s;
+}
+
+/********************** Social Media Link **********************/
+
+.social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
+  background:transparent;
+  border: .2rem solid var(--special-color);
+  border-radius:50%;
+  font-size: 2.8rem;
+  color: var(--special-color);
+  box-shadow: 3px 3px 8px var(--font-shadow);
+  transition: .5s;
+  opacity: 0;
+  animation: slidesoc 1s ease forwards; /*8*/
+  animation-delay: calc(.2s * var(--i));
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.social.hide{
+  display: none;
+}
+
+.social a:hover{
+  background: var(--special-color);
+  color: var(--banner-bg2);
+  box-shadow: 0 0 1rem var(--special-color);
+}
+
+/********************** Button **********************/
+
+.bt {
+  display: inline-block;
+  background-color: var(--banner-bg2);
+  padding: .8rem 2rem;
+  margin: 0 auto;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  border: .2rem solid var(--special-color);
+  color: var(--special-color);
+  letter-spacing: .1rem;
+  position: relative;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+  font-weight: 600;
+  z-index: 1;
+  box-shadow: 3px 3px 8px #5f5f5f ;
+}
+
+.bt::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 2.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to left, var(--special-color) 0%, var(--special-color) 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.bt:hover::before {
+  width:100%;
+    
+}
+
+.bt:hover {
+  transition: .5s ease;
+  color:var(--banner-bg2);
+  box-shadow: 0 0 1rem var(--special-color);
+}
+
+/********************** Animation **********************/
+
+@keyframes slidesoc { /*8*/
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/********************** Mobile View **********************/
+
+@media (max-width:768px){
+  .about {
+    flex-direction: column-reverse;
+  }
+  .custom-image1 {
+    width: 70vw;
+    margin: 4rem 0;
+  }
+}

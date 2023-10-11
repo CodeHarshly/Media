@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comapatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href ="css/Main.css">
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Social</title>
+</head>
+<body>
+    <!-----------------nav--------------------->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <h3>Social <span>Media</span></h3>
+            </div>
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="add-post">
+                <label for="add-post" class="btn btn-primary mini-button">Add Post</label>
+                <div class="profile-picture1" id="my-profile">
+                    <img src="images/Captainamerica1.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-----------------nav--------------------->
+    <!-----------------main section--------------------->
+    <main>
+        <div class="container main-container">
+            <!-----------------main left--------------------->
+            <div class="main-left">
+                <!-----------------profile--------------------->
+                <a class="profile">
+                    <div class="profile-picture1" id="my-profile">
+                        <img src="images/Captainamerica1.jpg" alt="profile">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Steve Roger</h4>
+                        <p class="text-gry">
+                            @CaptainAmerica
+                        </p>
+                    </div>
+                </a>
+                <!-----------------aside bar--------------------->
+                <aside>
+                    <a href="" class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span> <h3>Home</h3>
+                    </a>
+
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span> <h3>Explore</h3>
+                    </a>
+
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-bell"></i></span> 
+                        <small class="notify-counter">5</small>
+                        <h3>Notifications</h3>
+                        
+                        <!-----------------notification box--------------------->
+                        <div class="notification-box">
+                            <div>
+                                <div class="profile-picture1">
+                                    <img src="images/groot1.jpg" alt="profile">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Groot</b> Liked your post.
+                                    <small class="text-gry">just now</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture1">
+                                    <img src="images/spiderman1.jpg" alt="profile">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Peter Parker</b> accepted you request.
+                                    <small class="text-gry">1 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture1">
+                                    <img src="images/blackwidwo1.jpg" alt="profile">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Natasha Romanoff</b> Liked your post.
+                                    <small class="text-gry">2 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture1">
+                                    <img src="images/Harshdeep.jpg" alt="profile">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Tony Stark</b> Commented on ypur post.
+                                    <small class="text-gry">1 Days Ago</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture1">
+                                    <img src="images/Harshdeep.jpg" alt="profile">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Thor Odinson</b> Liked your post.
+                                    <small class="text-gry">1 Days Ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-----------------notification box end--------------------->
+                        
+                    </a>
+
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-message"></i></span> 
+                        <small class="notify-counter">3</small>
+                        <h3>Message</h3>
+                    </a>
+
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-bookmark"></i></span> <h3>Book Marks</h3>
+                    </a>
+
+                    <a href="" class="menu-item ">
+                        <span><i class="fa-solid fa-moon"></i></span> <h3>Theme</h3>
+                    </a>
+
+                    <a href="" class="menu-item ">
+                        <span><i class="fa-solid fa-gear"></i></span> <h3>Setting</h3>
+                    </a>
+
+                    <label for="add-post" class="btn btn-primary btn-lg" id="create-lg">Create Post</label>
+                </aside>
+            </div>
+            <!-----------------main middle--------------------->
+            <div class="main-middle">
+                <div class="middle-container">
+                    <div class="stories">
+                        <div class="stories-wrapper swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="story swiper-slide">
+                                    <img src="" alt="">
+                                    <div class="profile-picture1" id="my-profile">
+                                        <img src="images/Captainamerica1.jpg" alt="profile">
+                                    </div>
+                                    <label for="add-story" class="add-story">
+                                        <i class="fa fa-add" id="upload ">
+                                            <!--input type="file"-->
+                                        </i>
+                                        <p>Add Your <br> Story</p>
+                                    </label>
+                                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="add-story">
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/blackwidwo2.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/blackwidwo1.jpg" alt="profile">
+                                    </div>
+                                    <p>Natasha Romanoff</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/Thor2.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/Thor1.jpg" alt="profile">
+                                    </div>
+                                    <p>Thor Odinson</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/ironman2.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/ironman1.jpg" alt="profile">
+                                    </div>
+                                    <p>Tony Stark</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/Spiderman2.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/spiderman1.jpg" alt="profile">
+                                    </div>
+                                    <p>Peter Parker</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/hawkeye2.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/hawkeye1.jpg" alt="profile">
+                                    </div>
+                                    <p>Clint Barton</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/hulk .jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/Bruce1.jpg" alt="profile">
+                                    </div>
+                                    <p>Bruce Banner</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/groot1.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/groot1.jpg" alt="profile">
+                                    </div>
+                                    <p>Friend Story</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/hawkeye2.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/hawkeye1.jpg" alt="profile">
+                                    </div>
+                                    <p>Friend Story</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/IMG_20200626_180231.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/Harsh.png" alt="profile">
+                                    </div>
+                                    <p>Friend Story</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="images/IMG_20200626_180231.jpg" alt="">
+                                    <div class="profile-picture1" >
+                                        <img src="images/Harsh.png" alt="profile">
+                                    </div>
+                                    <p>Friend Story</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!---------------------------------------------->
+                    <form class="add-post input-post">
+                        <div class="profile-picture1" id="my-profile">
+                            <img src="images/Captainamerica1.jpg" alt="">
+                        </div>
+                        <input type="text" placeholder="What's on your mind?" id="add-post">
+                        <input type="submit" value="post" class="btn btn-primary">
+                    </form>
+
+                    <!---------------------------------------------->
+                    <div class="feeds">
+                        <!-------------------1st------------------------>
+                        <div class="feed">
+                            <!--------------------Feed top---------------------->
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture1">
+                                        <img src="images/groot1.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Groot</h3>
+                                        <div class="time text-gry">
+                                            <small>Unknown, <Span>2 Days Ago</Span></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i><!--three dot-->
+                                    <ul class="edit-menu">
+                                        
+                                        <li><i class="fa-regular fa-bell"></i>Notification</li>
+                                        <li><i class="fa-solid fa-triangle-exclamation"></i>Report</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---------------------Feed image------------------>
+                            <div class="feed-img">
+                                <div class="title">
+                                    <h2>I am groot. <br> 
+                                        I am groooooot.</h2>
+                                </div>
+                            </div>
+                            <!------------------feed action area----------------------->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>   
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="liked-by">
+                                <span><img src="images/hawkeye1.jpg" alt=""></span>
+                                <span><img src="images/spiderman1.jpg" alt=""></span>
+                                <span><img src="images/ironman1.jpg" alt=""></span>
+                                <p>Liked by <b>Tony Start</b> and <b>69 others</b></p>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="caption">
+                                <p><b>Groot</b> I am Groot
+                                <span class="hars-tag" >#Groot</span></p>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="comments text-gry">
+                                view all comments
+                            </div>
+                        </div>
+                        <!-----------------2nd------------------------>
+                        <div class="feed">
+                            <!--------------------Feed top---------------------->
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture1" id="my-profile">
+                                        <img src="images/Captainamerica1.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Steve Roger</h3>
+                                        <div class="time text-gry">
+                                            <small>New York, <Span>2 Days Ago</Span></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i><!--three dot-->
+                                    <ul class="edit-menu">
+                                        <li><i class="fa fa-pen"></i>Edit</li>
+                                        <li><i class="fa fa-trash"></i>Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---------------------Feed image------------------>
+                            <div class="feed-img">
+                                <img src="images/Captainamerica2.jpg" alt="">
+                            </div>
+                            <!------------------feed action area----------------------->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>   
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="liked-by">
+                                <span><img src="images/Thor1.jpg" alt=""></span>
+                                <span><img src="images/spiderman1.jpg" alt=""></span>
+                                <span><img src="images/blackwidwo1.jpg" alt=""></span>
+                                <p>Liked by <b>Natasha Romanoff </b> and <b>44 others</b></p>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="caption">
+                                <p><b>Steve Roger</b> Fighting
+                                <span class="hars-tag" >#CaptainAmerica</span></p>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="comments text-gry">
+                                view all comments
+                            </div>
+                        </div>
+                        <!-------------------3rd--------------------->
+                        <div class="feed">
+                            <!--------------------Feed top---------------------->
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture1">
+                                        <img src="images/ironman1.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Tony Start</h3>
+                                        <div class="time text-gry">
+                                            <small>New York, <Span>2 Days Ago</Span></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <i class="fa-solid fa-ellipsis"></i><!--three dot-->
+                                    <ul class="edit-menu">
+                                        <li><i class="fa-regular fa-bell"></i>Notification</li>
+                                        <li><i class="fa-solid fa-triangle-exclamation"></i>Report</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!---------------------Feed image------------------>
+                            <div class="feed-img">
+                                <img src="images/ironman2.jpg" alt="">
+                            </div>
+                            <!------------------feed action area----------------------->
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>   
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="liked-by">
+                                <span><img src="images/blackwidwo1.jpg" alt=""></span>
+                                <span><img src="images/groot1.jpg" alt=""></span>
+                                <span><img src="images/spiderman1.jpg" alt=""></span>
+                                <p>Liked by <b>Peter Parker</b> and <b>69 others</b></p>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="caption">
+                                <p><b>Tony Stark</b> 
+                                <span class="hars-tag" >#IronMan</span></p>
+                            </div>
+                            <!---------------------------------------------->
+                            <div class="comments text-gry">
+                                view all comments
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------main right--------------------->
+            <div class="main-right">
+                 <div class="messages">
+                    <div class="message-top">
+                        <h4>Meassage</h4><i class="fa fa-edit"></i>
+
+                    </div>
+                    <!-----search bar------->
+                    <div class="message-search-bar">
+                        <i class="fa fa-search"></i>
+                        <input type="search" placeholder="Search Message" id="message">
+                    </div>
+                    <!------message categories----->
+                    <div class="message-categories">
+                        <h6 class="active">Primary</h6>
+                        <h6 >General</h6>
+                        <h6 class="message-request">Request(2)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture1">
+                            <img src="images/blackwidwo1.jpg" alt="">
+                            <div class="green-active"></div> 
+                        </div>
+                        <div class="message-body">
+                            <h5>Natasha Romanoff</h5>
+                            <p class="text-gry">
+                                Hey! Howdy
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture1">
+                            <img src="images/blackwidwo1.jpg" alt="">
+                            <div class="green-active"></div> 
+                        </div>
+                        <div class="message-body">
+                            <h5>Natasha Romanoff</h5>
+                            <p class="text-gry">
+                                Hey! Howdy
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture1">
+                            <img src="images/blackwidwo1.jpg" alt="">
+                            <div class="green-active"></div> 
+                        </div>
+                        <div class="message-body">
+                            <h5>Natasha Romanoff</h5>
+                            <p class="text-gry">
+                                Hey! Howdy
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture1">
+                            <img src="images/blackwidwo1.jpg" alt="">
+                            <div class="green-active"></div> 
+                        </div>
+                        <div class="message-body">
+                            <h5>Natasha Romanoff</h5>
+                            <p class="text-gry">
+                                Hey! Howdy
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture1">
+                            <img src="images/blackwidwo1.jpg" alt="">
+                            <div class="green-active"></div> 
+                        </div>
+                        <div class="message-body">
+                            <h5>Natasha Romanoff</h5>
+                            <p class="text-gry">
+                                Hey! Howdy
+                            </p>
+                            
+                        </div>
+                    </div>
+                 </div>   
+                 <!------Request categories----->
+                 <div class="friend-request"> 
+                    <h4>Request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture1">
+                                <img src="images/Bruce1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Bruce Banner</h5>
+                                <p class="text-gry">
+                                    10 mutual friend
+                                </p>
+                                <small class="text-gry alert">You have accepted friend request</small>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture1">
+                                <img src="images/Bruce1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Bruce Banner</h5>
+                                <p class="text-gry">
+                                    10 mutual friend
+                                </p>
+                                <small class="text-gry alert">You have accepted friend request</small>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture1">
+                                <img src="images/Bruce1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Bruce Banner</h5>
+                                <p class="text-gry">
+                                    10 mutual friend
+                                </p>
+                                <small class="text-gry alert">You have accepted friend request</small>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture1">
+                                <img src="images/Bruce1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Bruce Banner</h5>
+                                <p class="text-gry">
+                                    10 mutual friend
+                                </p>
+                                <small class="text-gry alert">You have accepted friend request</small>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture1">
+                                <img src="images/Bruce1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Bruce Banner</h5>
+                                <p class="text-gry">
+                                    10 mutual friend
+                                </p>
+                                <small class="text-gry alert">You have accepted friend request</small>
+                                
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="btn btn-primary">
+                                Accept
+                            </div>
+                            <div class="btn btn-danger">
+                                Delete
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <!-----------------profile popup--------------------->
+    <div class="popup profile-popup">
+        <div>
+            <div class="popup-box profile-popup-box">
+                <h1>Steve Roger</h1>
+                <p>@CaptainAmerica</p>
+                <div id="my-profile">
+                    <img src="images/Captainamerica1.jpg" alt="">
+                </div>
+                <label for="profile-upload" class="btn btn-primary btn-lg">Update Profile Picture</label>
+                <input type="file" accept="image/jpg, image/png, image/jepg" id="profile-upload">
+                <button class="btn btn-primary btn-lg">Log Out</button>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <!-----------------post popup--------------------->
+    <div class="popup add-post-popup">
+        <div>
+            <div class="popup-box add-post-popup">
+                <h1>Add New Post</h1>
+                <div class="row post-title" id="add-post-pop">
+                    <label>Title</label>
+                    <input type="text" placeholder="What's on your mind?" id="title-input">
+                </div>
+                <div class="row post-img">
+                    <img src="" alt="" id="PostImage">
+                    <label for="feed-upload" class="feed-upload-btn">
+                    <span><i class="fa fa-add"></i></span> 
+                    Upload A Picture
+                    </label>
+                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-upload">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Add Post">
+                </div>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <!-----------------Theme Customize---------------->
+    <div class="popup theme-customize">
+        <div>
+            <div class="popup-box theme-custom-box">
+                <h2>Customize Your Theme</h2>
+                <p>Manage your Font Size, Color and Background</p>
+
+                <!------Font size----->
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <div>
+                            <h6>Aa</h6>
+                        </div>
+                        <div class="choose-size">
+                            <span class="font-size1"></span>
+                            <span class="font-size2 active"></span>
+                            <span class="font-size3"></span>
+                            <span class="font-size4"></span>
+                            <span class="font-size5"></span>
+                        </div>
+                        <div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+                </div>
+                <!------primary color----->
+                <div class="colors">
+                    <h4>Color</h4>
+                    <div class="choose-color">
+                        <span class="color-1 active"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+                <!------background color----->
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg1 active">
+                            <span></span>
+                            <h5>Light</h5>
+
+                        </div>
+                        <div class="bg2">
+                            <span></span>
+                            <h5>Dark</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script/Main.js"></script>
+    <script src="script/Swiper.js"></script>
+</body>
+</html>
