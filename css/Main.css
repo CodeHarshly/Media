@@ -830,12 +830,19 @@ aside .menu-item:nth-last-child(2){
         nav .search-bar{
             display: none;
         }
-        
+        .middle-container{
+            max-width: 600px !important;
+        }
         .main-container{
             grid-template-columns: auto 0;
         }
         .main-right{
             display: none;
+        }
+    }
+    @media (max-width:551px) {
+        .middle-container{
+            max-width: 400px !important;
         }
     }
 }
