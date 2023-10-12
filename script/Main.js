@@ -11,14 +11,13 @@ function initSwiper() {
   if (window.matchMedia('(max-width: 550px)').matches) {
     swiper = new Swiper(".mySwiper", {
       ...defaultConfig,
-      slidesPerView: 4, // Change slidesPerView to 4 for screens with a max width of 550px
-    });
+      slidesPerView: 5,
+  });
   } else {
     swiper = new Swiper(".mySwiper", defaultConfig);
   }
 }
 
-// Initialize the Swiper
 initSwiper();
 
 // Listen for the resize event and update the Swiper configuration
